@@ -27,11 +27,15 @@ var app = new Vue({
             'birthday' : '20.04.2013',
             'is_admin': false,
         },
-    ]
+    ],
+    counter: 0,
   },
   methods : {
     greet: function() {
         return 'My name is ' + this.name
+    },
+    substract: function(){
+        this.counter--;
     }
   }
 })
