@@ -80,6 +80,24 @@
         </div>
     </div>
 
+    <hr />
+
+    <div class="section">
+        <div class="section-title">
+            <h3>Event Modifiers</h3>
+        </div>
+        <div class="section-body"  v-on:click="say('Click on parent!')">
+            <a href="http://google.com" target="_blank" v-on:click.stop.prevent="say('Link click, but no click on parent!')">Click!</a>
+            <br />
+            <br />
+            <form action="https://google.com" v-on:submit.prevent="say('No submit but click on parent!')">
+                <button type="submit">Submit form</button>
+            </form>
+        </div>
+    </div>
+
+    <hr />
+
     <pre>{{$data | json}}</pre>
 </div>
 

@@ -36,6 +36,9 @@ var app = new Vue({
     },
     substract: function(){
         this.counter--;
+    },
+    say: function (message) {
+        alert(message);
     }
   }
 })
