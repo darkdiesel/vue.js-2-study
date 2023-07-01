@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vue.js 2 study</title>
-
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 <div id="app">
@@ -22,6 +22,13 @@
     </p>
 
     <div v-html="markup"></div>
+
+    <ul>
+        <li v-for="user in users" v-bind:class="{'is_admin': user.is_admin}">
+            <h5>{{user.name}}</h5>
+            <h6>{{user.birthday}}</h6>
+        </li>
+    </ul>
 
     <pre>{{$data | json}}</pre>
 </div>
