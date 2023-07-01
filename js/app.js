@@ -30,6 +30,12 @@ var app = new Vue({
     ],
     counter: 0,
   },
+  config : {
+    keyCodes : {
+        f1 : 112,
+        f2 : 113,
+    },
+  },
   methods : {
     greet: function() {
         return 'My name is ' + this.name
@@ -39,6 +45,9 @@ var app = new Vue({
     },
     say: function (message) {
         alert(message);
+    },
+    valuerChanged: function () {
+        console.log('Input is changed!');
     }
   }
 })
