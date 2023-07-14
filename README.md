@@ -6,6 +6,7 @@ Learning Vue.js 2
 - [Install](#install)
 - [Directives](#directives)
 - [Event Modifiers](#event-modifiers)
+- [Key Modifiers](#key-modifiers)
 
 ## CDN
 You can found url for cdn vue.js on [v2.vuejs.org](https://v2.vuejs.org/v2/guide/) 
@@ -74,4 +75,11 @@ var app = new Vue({
 <!-- immediately, instead of waiting for `onScroll` to complete  -->
 <!-- in case it contains `event.preventDefault()`                -->
 <div v-on:scroll.passive="onScroll">...</div>
+```
+
+## Key Modifiers 
+
+```html
+<!-- only call `vm.submit()` when the `key` is `Enter` -->
+<input v-on:keyup.enter="submit">
 ```

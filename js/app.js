@@ -49,5 +49,8 @@ var app = new Vue({
     valuerChanged: function () {
         console.log('Input is changed!');
     }
+  },
+  computed : {
+
   }
 })
